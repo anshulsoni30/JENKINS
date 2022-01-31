@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20220131 10:02:31.362" rpa="false" schemaversion="2">
+<suite id="s1" name="MF1" source="C:\Users\user\kuvera\Tests\MF1.robot">
+<test id="s1-t1" name="User login in kuvera">
+<kw name="Open browser with kuvera url" library="Landingpage">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=C:/Users/user/Desktop/chrome/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220131 10:02:32.048" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220131 10:02:32.047" endtime="20220131 10:02:35.165"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://staging3.kuvera.in/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220131 10:02:35.166" level="INFO">Opening url 'https://staging3.kuvera.in/'</msg>
+<status status="PASS" starttime="20220131 10:02:35.165" endtime="20220131 10:03:01.746"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${close}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220131 10:03:01.747" level="INFO">Clicking button 'xpath://button[normalize-space()='Close']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220131 10:03:01.868" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220131 10:03:01.775" endtime="20220131 10:03:01.868"/>
+</kw>
+<msg timestamp="20220131 10:03:01.931" level="FAIL">Button with locator 'xpath://button[normalize-space()='Close']' not found.</msg>
+<status status="FAIL" starttime="20220131 10:03:01.746" endtime="20220131 10:03:01.931"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${logins}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220131 10:03:01.931" endtime="20220131 10:03:01.931"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${logins}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220131 10:03:01.931" endtime="20220131 10:03:01.931"/>
+</kw>
+<status status="FAIL" starttime="20220131 10:02:32.046" endtime="20220131 10:03:01.931"/>
+</kw>
+<kw name="User login in kuvera" library="Loginpage">
+<status status="NOT RUN" starttime="20220131 10:03:01.931" endtime="20220131 10:03:01.931"/>
+</kw>
+<status status="FAIL" starttime="20220131 10:02:32.044" endtime="20220131 10:03:01.931">Button with locator 'xpath://button[normalize-space()='Close']' not found.</status>
+</test>
+<test id="s1-t2" name="User Navigates to Mutual Fund page in explore option">
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220131 10:03:11.951" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220131 10:03:01.947" endtime="20220131 10:03:11.951"/>
+</kw>
+<kw name="User navigates to Mutual fund page" library="Home_page">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${Mutualfund}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="FAIL" starttime="20220131 10:03:12.002" endtime="20220131 10:03:12.003"/>
+</kw>
+<msg timestamp="20220131 10:03:12.003" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<status status="FAIL" starttime="20220131 10:03:11.952" endtime="20220131 10:03:12.004"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Mutualfund}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220131 10:03:12.004" endtime="20220131 10:03:12.004"/>
+</kw>
+<status status="FAIL" starttime="20220131 10:03:11.951" endtime="20220131 10:03:12.005"/>
+</kw>
+<status status="FAIL" starttime="20220131 10:03:01.931" endtime="20220131 10:03:12.006">Execution terminated by signal</status>
+</test>
+<test id="s1-t3" name="Verify Mutual fund tabs">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220131 10:03:12.008" endtime="20220131 10:03:12.009">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t4" name="Verifying sort fund options">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220131 10:03:12.011" endtime="20220131 10:03:12.012">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t5" name="Verifying Filter Options">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220131 10:03:12.014" endtime="20220131 10:03:12.015">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Automating the kuvera web application</doc>
+<status status="FAIL" starttime="20220131 10:02:31.362" endtime="20220131 10:03:12.018"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+</tag>
+<suite>
+<stat pass="0" fail="5" skip="0" id="s1" name="MF1">MF1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220131 10:03:12.003" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+</errors>
+</robot>

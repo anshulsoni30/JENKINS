@@ -1,0 +1,40 @@
+==============================================================================
+MF1 :: Automating the kuvera web application                                  
+==============================================================================
+User login in kuvera                                                  | PASS |
+------------------------------------------------------------------------------
+User Navigates to Mutual Fund page in explore option                  | PASS |
+------------------------------------------------------------------------------
+Verify Mutual fund tabs                                                 
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\user\kuvera\Tests\MF1.robot:21
+    T:  Verify Mutual fund tabs    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\user\kuvera\Tests\MF1.robot:22
+       User verifys all mf tabs title    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\user\kuvera\Resource\Mutual_fund.robot:23
+      Lists Should Be Equal    ${expected}    ${actual}
+      |  ${expected} = ['Watchlist', 'Insta reedem', 'Save taxes', 'Top rated', 'Investors choice', 'New funds', 'Top searched'] (list)
+      |  ${actual} = [] (list)
+______________________________________________________________________________
+| FAIL |
+Lengths are different: 7 != 0
+------------------------------------------------------------------------------
+Verifying sort fund options                                           | FAIL |
+Element 'xpath://div[contains(@class, 'label b-fund-sort__label') and text()='Name']' not visible after 10 seconds.
+------------------------------------------------------------------------------
+Verifying Filter Options                                              | FAIL |
+Test case contains no keywords.
+------------------------------------------------------------------------------
+Verifying fund details page                                           | FAIL |
+Test case contains no keywords.
+------------------------------------------------------------------------------
+Testing the Mutual fund flow                                          | FAIL |
+Test case contains no keywords.
+------------------------------------------------------------------------------
+MF1 :: Automating the kuvera web application                          | FAIL |
+7 tests, 2 passed, 5 failed
+==============================================================================
+Output:  C:\Users\user\kuvera\Results\pabot_results\0\output.xml
